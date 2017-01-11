@@ -1,5 +1,17 @@
 Readme file for Arduino Time Library
 
+-------------
+
+**NOTE**: This fork has been modified to prevent a conflict in Windows machines with the 
+time.h library included in the Arduino Core ESP8266. Check the folowing issues:
+
+https://github.com/esp8266/Arduino/issues/2341
+https://github.com/me-no-dev/ESPAsyncWebServer/issues/60
+
+The only change has been to remove the Time.h library that was a wrapper around the TimeLib.h library.
+
+-------------
+
 Time is a library that provides timekeeping functionality for Arduino.
 
 The code is derived from the Playground DateTime library but is updated
